@@ -301,6 +301,16 @@
     border-top:1px solid var(--hair);padding:28px 0;text-align:center;
     font-size:12.5px;color:rgba(62,66,71,0.6);
   }
+  .footer-credit{
+    margin:10px 0 0;font-size:12px;font-style:italic;color:rgba(62,66,71,0.55);
+  }
+  .footer-credit .ig-link{
+    display:inline-flex;align-items:center;gap:5px;
+    color:var(--brass);font-weight:600;font-style:normal;text-decoration:none;
+    margin:0 3px;
+  }
+  .footer-credit .ig-link:hover{text-decoration:underline;}
+  .footer-credit .ig-link svg{width:13px;height:13px;stroke:var(--brass);flex-shrink:0;}
 
   /* Schermata di scelta lingua */
   .lang-gate{
@@ -636,6 +646,14 @@
 
 <footer>
   <span data-i18n="footer_text">Jaafar Benabbou — Marrakech, Marocco</span>
+  <p class="footer-credit">
+    <span data-i18n="footer_credit_pre">Sito creato con poco impegno da mio nipote</span>
+    <a class="ig-link" href="https://www.instagram.com/_simone_fortuna_?stkn=NHJnamxkMGhzZjNq" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      @_simone_fortuna_
+    </a>
+    <span data-i18n="footer_credit_post">scopri cosa fa nella vita!</span>
+  </p>
 </footer>
 
 <!-- Lightbox -->
@@ -731,7 +749,9 @@
       review_submit:"Invia recensione",
       review_confirm:"Si è aperta la tua app email: invia il messaggio per completare l'invio.",
       contact_title:"Contatti",
-      footer_text:"Jaafar Benabbou — Marrakech, Marocco"
+      footer_text:"Jaafar Benabbou — Marrakech, Marocco",
+      footer_credit_pre:"Sito creato con poco impegno da mio nipote",
+      footer_credit_post:"scopri cosa fa nella vita!"
     },
     fr: {
       nav_about:"À propos", nav_services:"Services", nav_gallery:"Galerie", nav_reviews:"Avis", nav_contact:"Contact",
@@ -771,7 +791,9 @@
       review_submit:"Envoyer l'avis",
       review_confirm:"Votre application email s'est ouverte : envoyez le message pour finaliser l'envoi.",
       contact_title:"Contact",
-      footer_text:"Jaafar Benabbou — Marrakech, Maroc"
+      footer_text:"Jaafar Benabbou — Marrakech, Maroc",
+      footer_credit_pre:"Site créé avec (peu d')effort par mon neveu",
+      footer_credit_post:"découvrez ce qu'il fait dans la vie !"
     }
   };
 
